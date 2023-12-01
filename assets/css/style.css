@@ -311,6 +311,7 @@ header {
     height: 30vh;
     color: var(--vermelho-escuro);
     padding-top:15rem;
+    padding-bottom: 15rem;
 }
 
 .about-text-1{
@@ -323,42 +324,134 @@ header {
 .enjoy{
     display: flex;
     align-items: center;
-    justify-content: space-between;   
-    margin: 0 auto;
-    width: 70%;
-    height: 30vh;
-    color: var(--vermelho-escuro);
-    padding-top:10rem;
-}
-
-/*.enjoy{
-    display: flex;
-    align-items: center;
     justify-content: space-between; 
     margin: 0 auto;
     width: 85%;
-    height: 45vh;        
-    border-radius: 40px;   
+    height: 55vh; 
     color: white;
     padding-top: 10rem;
+    //padding-bottom: 10rem;      
+    box-sizing: border-box; 
+    position: relative;  
 }
 
-.booking{
+.booking{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 70%;
-    height: auto;
-    background: linear-gradient(to right, #541511, #F3C7C4);
+    height: 100%; 
+    box-sizing: border-box; 
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    position: absolute;    
+    left: 0;
+    background: linear-gradient(to bottom, #91655F, #F3C7C4);
+    color: white;
+    padding-left:3rem;    
+    //overflow: visible;
+}
+
+.booking img{   
+    padding-bottom: 5rem;       
 }
 
 .booking hr{    
-    width: 9%;
+    width: 20%;
     height: 1px;
     background-color: white;
     border: none;
+    margin: 10px 0;   
 }
 
-.where{    
-    background: linear-gradient(to right, #541511, #F3C7C4);
-}*/
+.booking h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 3px; 
+}   
+
+.booking h3{    
+    font-size: 1rem;
+    font-weight: 400;       
+}
+
+.booking p{
+    font-size: 0.8rem;
+    font-weight: 400; 
+    margin: 10px 0;
+}
+
+.booking a{
+    display: inline-block;
+    color: var(--vermelho-escuro);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.where{            
+    width: 30%;
+    height: 100%; 
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;    
+    position: absolute;    
+    right: 0;
+    background: linear-gradient(to bottom, #8F423D, #FFF);
+    color: white;    
+    padding-top: 1.5rem;
+    text-align: center;  
+    z-index: -1;  
+}
+
+.where hr{    
+    display: inline-block;
+    align-items: center;
+    width: 75%;
+    height: 1px;
+    background-color: white;
+    border: none;
+    margin: 20px 0;   
+}
+
+.where p{
+    font-size: 0.85rem;
+    font-weight: 400; 
+    margin: 5px 0;
+    text-align: left;
+    padding-left: 2.5rem;
+}
+
+.where h4{
+    font-size: 0.9rem;
+    font-weight: 400; 
+    margin: 20px 0;    
+    margin-left: 15px; 
+}
+
+where i{    
+    color: #fff;
+}
+
+.map{
+    display: flex;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+.hr{  
+    padding-top: 10rem;
+}
+
+.hr hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 1.2px;
+    background-color: #ddd;
+    border: none;
+}
 
 footer {
     width: 100%;   
@@ -367,10 +460,12 @@ footer {
 
 .footer{   
     text-decoration: none;
-    padding-top: 15rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;        
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(3, 1fr);  
+    justify-content: center;
+    align-items: center;
 }
 
 .footer ul {
@@ -379,6 +474,8 @@ footer {
 
 .footer ul li {
     margin-right: 2.5vw;
+    margin-bottom: 0.5rem;
+    color: var(--vermelho-escuro);
 }
 
 .footer ul li a {
@@ -388,4 +485,9 @@ footer {
 
 .footer h3{
     font-size: 1.rem; 
+    color: var(--preto);
+}
+
+.footer ul li i{    
+    color: var(--vermelho-escuro);     
 }
