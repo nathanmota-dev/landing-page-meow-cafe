@@ -358,4 +358,34 @@ header {
 
 .where{    
     background: linear-gradient(to right, #541511, #F3C7C4);
-}/*
+}*/
+
+footer {
+    width: 100%;   
+    letter-spacing: 1px;
+}
+
+.footer{   
+    text-decoration: none;
+    padding-top: 15rem;
+    padding-bottom: 3rem;        
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+}
+
+.footer ul {
+    list-style: none;    
+}
+
+.footer ul li {
+    margin-right: 2.5vw;
+}
+
+.footer ul li a {
+    text-decoration: none;    
+    color: var(--vermelho-escuro);
+}
+
+.footer h3{
+    font-size: 1.rem; 
+}
