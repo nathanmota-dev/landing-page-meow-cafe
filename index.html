@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaQuery.css">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Meow Café</title>
@@ -28,6 +29,24 @@
                     <li><a href="#"><input type="button" value="Delivery"></a></li>
                 </ul>
             </nav>
+
+        </div>
+
+        <div class="mobile-menu">
+            <nav class="nav-bar">
+                <ul>
+                    <li class="sd-2"><a href="#">Início</a></li>
+                    <li class="sd-2"><a href=" #">Produtos</a></li>
+                    <li class="sd-2"><a href=" #">Sobre</a></li>
+                </ul>
+            </nav>
+            <nav class="sd-3">
+                <ul>
+                    <li><img src="assets/img/logo.png" alt="logo"></li>
+                    <li class="sd-1"><a href="#">Meow Café</a></li>
+                    <li><a href="#"><input type="button" value="Delivery"></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -40,7 +59,7 @@
                 espaço confortável para você e seu melhor<br>
                 amigo. </p>
         </div>
-        <div class="header">
+        <div class="image-container">
             <img src="assets/img/header.png" alt="café header">
         </div>
     </div>
@@ -115,14 +134,12 @@
     <div class="about">
         <div class="about-text-1">
             <h2>Sobre nós</h2>
-            <h1>Nós oferecemos<br>
-                uma experiência<br>
-                inesquecível para<br>
-                amantes de café<br>
+            <h1>Nós oferecemos uma experiência
+                inesquecível para amantes de café
                 e pais de pet!</h1>
         </div>
 
-        <div class="about-text-1">
+        <div class="about-text-2">
             <h3>O melhor lugar para apreciar o seu café</h3><br>
             <p>No Meow Cafe, priorizamos a criação de um espaço onde tanto os seres humanos quanto seus animais de
                 estimação
@@ -141,11 +158,13 @@
                 <hr>
                 <h3>Todos os sábados e domingos</h3>
                 <p>Venha tomar o seu brunch com a gente!</p>
-                <a href="#">Faça uma reserva ></a>
+                <div class="div-l">
+                    <a href="#">Faça uma reserva ></a>
+                </div>
             </div>
-
-            <img src="assets/img/enjoy.png" alt="Booking">
-
+            <div class="b-img">
+                <img src="assets/img/enjoy.png" alt="Booking">
+            </div>
         </div>
         <div class="where">
             <h1>Onde estamos</h1>
@@ -176,7 +195,7 @@
                             <i class="fa fa-whatsapp fa-2x"></i>
                         </li>
                     </ul>
-
+                    
                     <ul>
                         <li>
                             <h3>Links Úteis</h3>
