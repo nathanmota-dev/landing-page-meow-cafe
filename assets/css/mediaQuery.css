@@ -2,73 +2,45 @@
     --cor-fundo: #F7F2E8;
     --preto: #1A1A1A;
     --vermelho-escuro: #3C0E0E;
-}   
+}  
 
-@media screen and (max-width: 730px) {   
+@media screen and (max-width: 730px) {
     
-    .menu{
-        display: none;
+    header {
+        width: 100%;
+        height: auto;
+        display: block;
     }
     
+    .menu{
+        .nav-1, .nav-2{
+            display: none;
+        }
+    }
+    
+    .mobile-menu {
+        display: block;
+        width: 100%;
+        height: auto;   
+        align-items: center;
+        margin-left: -25px;
+    }
+
+    .hamburguer-img{
+        display: block;
+    }
+
+    .logo{
+        width: 120px;
+        height: auto;
+    }   
+
     body{
         margin-left: 10px;
         margin-right: 10px;
         background-color: var(--cor-fundo);
-    }
-
-    .icon{
-        display: block;
-        z-index: 1;
-    }
-
-    .nav-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--vermelho-escuro);
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;    
-
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-    }
-
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    .nav.active .navlist{
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-
-    .mobile-menu li {
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .mobile-menu button {
-        display: block;
-        padding: 1rem 2rem;
-        width: 100%; 
-    }
+    }   
     
-    .mobile-menu.open {
-        display: block;
-    }
-
     .text-container h1{
         font-size: 2rem;            
     }
@@ -83,7 +55,7 @@
         flex-direction: column;
         justify-content: center;      
         align-items: center;   
-      }
+    }
 
     .card{
         padding-top: 1.5rem;
@@ -114,8 +86,7 @@
         padding-top: 3rem;
         padding-bottom: 2rem;   
         padding-left: 6%;    
-        padding-right: 6%;       
-        //text-align: center;   
+        padding-right: 6%;
     }
 
     .about-text-1{
@@ -182,16 +153,17 @@
         padding-top: 1rem;
     }
 
-    .footer{
+    .footer{        
         display: flex;
-        flex-direction: column;
-        justify-content: center;        
+        flex-direction: column;   
         padding-top: 0.5rem; 
+        padding-bottom: 1rem;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;        
     }    
 
-    .footer ul li a{
-        display: inline-block;  
-        text-align: left;
-    }
-
+    
 }

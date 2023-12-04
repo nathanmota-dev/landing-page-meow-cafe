@@ -60,12 +60,12 @@ header {
     font-size: 1.2rem;
 }
 
-.sd-3 a {
+.nav-2 a {
     color: var(--vermelho-escuro); 
     font-size: 1.2rem;
 }
 
-.sd-3 input {
+.nav-2 input {
     display: inline-block;
     padding: .55rem 1.8rem;
     border-radius: 10rem;        
@@ -490,51 +490,91 @@ footer {
     color: var(--vermelho-escuro);     
 }
 
-.mobile-menu-icon {
+.mobile-menu{
     display: none;
-    cursor: pointer;
-    border: none;
-    backgroud: none;
-    border-top: 3px solid #fff;
 }
 
-.mobile-menu {
+.hamburguer-img{
     display: none;
-    background-color: var(--cor-fundo);
 }
 
-.mobile-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.mobile-menu .nav-bar{
+    position: absolute;
+    right: 2rem;
+    padding-top: 2rem;
+    top: 60px;
+    width: 300px;    
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.mobile-menu li {
-    padding: 1rem;
-    text-align: center;
+.mobile-menu li{
+    padding: 0.7 rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.mobile-menu a {
-    text-decoration: none;
+.hamburguer {
+    position: fixed; 
+    right: 0; 
+}
+
+.nav-3 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-3 {
+    margin-right: auto;
+}
+
+.nav-3 ul li a {
     color: var(--vermelho-escuro); 
-    font-weight: 500;
     font-size: 1.2rem;
 }
 
-.mobile-menu input {
+.nav-3 input {
     display: inline-block;
     padding: .55rem 1.8rem;
-    border-radius: 10rem;
+    border-radius: 10rem;        
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background-color: var(--vermelho-escuro);
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: var(--vermelho-escuro); 
+    color: white; 
+    border: none;    
+    cursor: pointer;    
     font-size: 1.2rem;
 }
 
-.mobile-menu.open {
+.nav-bar {
+    display: none;
+}
+
+.show-nav-bar {
     display: block;
+}
+
+.nav-3 .sd-1 a {
+    color: var(--preto); 
+    font-size: 1.5rem;
+}
+
+.mobile-menu nav ul {
+    list-style: none;
+    display: flex;    
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu nav ul li {
+    margin-right: 2.5vw; //aspaçamento lateral
+}
+
+.mobile-menu nav ul li a {
+    text-decoration: none;   
+    font-weight: 500;
 }
