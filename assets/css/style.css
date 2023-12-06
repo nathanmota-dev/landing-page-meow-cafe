@@ -53,16 +53,30 @@ header {
 .sd-1 a {
     color: var(--preto); 
     font-size: 1.5rem;
+    transition: color 0.8s ease;
+}
+
+.sd-1 a:hover {
+    color: #F1C6C3;
 }
 
 .sd-2 a {
     color: var(--vermelho-escuro); 
     font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.sd-2 a:hover {
+    color: #F1C6C3;  
 }
 
 .nav-2 a {
     color: var(--vermelho-escuro); 
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
+}
+
+.nav-2 a:hover {
+    color:#F1C6C3;  
 }
 
 .nav-2 input {
@@ -86,6 +100,7 @@ header {
 }
 
 .text-container {
+    position: relative;
     flex: 1;
     padding-right: 20px;
 }
@@ -110,7 +125,10 @@ header {
 }
 
 .image-container img {
-    width: 100%;
+    position: absolute;
+    width: 40%;
+    margin-top: -30rem;
+    margin-left: -13rem;
     height: auto;
 }
 
@@ -253,20 +271,20 @@ header {
     align-items: center;
     justify-content: space-between; 
     margin: 0 auto;
-    width: 85%;
-    height: 45vh;    
+    width: 75%;
+    height: 40vh;    
     background: linear-gradient(to right top, #541511, #F3C7C4);
-    border-radius: 40px;         
+    border-radius: 40px;      
 }
 
 .cp-img{
     display: flex;
     align-items: left;
-    margin-bottom: 70px;
+    margin-bottom: 5rem;
 }
 
 .cp-img img{
-    width: 90%;
+    width: 150%;
     height: auto;
 }
 
@@ -274,11 +292,11 @@ header {
     flex-grow: 1;
     color: white;
     text-align: right;     
-    margin-right: 30px;  
+    margin-right: 3rem;  
 }
 
 .cf-text h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -288,9 +306,10 @@ header {
 
 .cf-text input{
     display: inline-block;
-    padding: .55rem 5.8rem;
+    padding: .70rem 7rem;
     border-radius: 10rem;       
     position: relative;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     z-index: 1;
     background-color: white; 
@@ -299,10 +318,11 @@ header {
     cursor: pointer;    
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 3rem
+    margin-top: 3rem    
 }
 
 .about{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;   
@@ -310,15 +330,37 @@ header {
     width: 70%;
     height: 30vh;
     color: var(--vermelho-escuro);
-    padding-top:15rem;
+    padding-top:18rem;
     padding-bottom: 15rem;
 }
 
+.about-text-1 h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.about-text-1 h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 .about-text-1{
-    flex: 1;
+    //flex: 1;
     padding-right: 20px;
     align-items: left;
-    width: 50%;
+    width: 35%;
+    margin-right: 7.5%;
+    height: auto;
+}
+
+.about-text-2{
+    width: 40%;
+    margin-left: 7.5%;
+}
+
+.about-text-2 h3{
+    font-size: 1rem;
+    font-weight: 800;
 }
 
 .enjoy{
@@ -577,4 +619,8 @@ footer {
 .mobile-menu nav ul li a {
     text-decoration: none;   
     font-weight: 500;
+}
+
+.capuccino img{
+    padding-top: 1.5rem;
 }
