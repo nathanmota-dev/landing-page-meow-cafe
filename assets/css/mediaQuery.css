@@ -24,6 +24,7 @@
         height: auto;   
         align-items: center;
         margin-left: -25px;
+        z-index: 1;
     }
 
     .hamburguer-img{
@@ -44,16 +45,47 @@
         margin-left: 10px;
         margin-right: 10px;
         background-color: var(--cor-fundo);
-    }   
+    }  
 
-    .image-container img{
-        position: absolute;           
-        left: 10rem;
-        top: 0.5rem;
-        width: 150%;
-        height: auto;    
+    .container{
+        width: 100%;        
+        height: auto;        
+        padding-bottom: 4rem;        
+        //position: relative;         
+        //overflow: hidden;
+    } 
+
+    .image-container{
+        display: none;
     }
-        
+
+    .image-container-mobile{
+        display: block;
+    }
+
+    .image-container-mobile img{
+        position: absolute;           
+        margin-top: 0;
+        margin-left: 0;
+        left: 0rem;
+        top: -1.5rem;
+        width: 100%;         
+        height: auto;      
+    }
+
+    .container .img-1{
+        overflow: hidden;
+    }
+
+    .img-1{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        position: relative;         
+        //overflow: hidden;
+        //clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+    }      
+
     .text-container h1{
         font-size: 2rem;            
     }
@@ -61,6 +93,11 @@
     .text-container{
         font-weight: 500;
         position: relative;
+        z-index: 1;
+    }
+
+    .text-container p{
+        max-width: 50%;
     }
 
     .cards {
@@ -104,7 +141,8 @@
     }
 
     .about-text-1{
-        padding-right: 20px;
+        padding-right: 0px;
+        margin-left: 12%;
         align-items: left;
         width: 100%;
     }

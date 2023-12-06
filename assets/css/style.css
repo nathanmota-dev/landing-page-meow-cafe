@@ -32,6 +32,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .menu nav ul {
@@ -105,6 +106,10 @@ header {
     padding-right: 20px;
 }
 
+.text-container p{
+    max-width: 50%;
+}
+
 .text-container h3, .text-container h1, .text-container p {
     color: var(--vermelho-escuro);   
 }
@@ -170,7 +175,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
-  }
+}
 
 .card{
     position: relative;
@@ -187,7 +192,7 @@ header {
 }
 
 .card-2{
-    background: linear-gradient(to right, #9C7770, #F8F7F7);    
+    background: linear-gradient(to bottom, #F8F7F7, #9C7770);    
 }
 
 .card-3{
@@ -623,4 +628,8 @@ footer {
 
 .capuccino img{
     padding-top: 1.5rem;
+}
+
+.image-container-mobile{
+    display: none;
 }
