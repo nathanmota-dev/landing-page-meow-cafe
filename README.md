@@ -8,7 +8,6 @@ Projeto proposto pela [Codante](https://codante.io/) onde o objetivo era dar a v
 - Estilize sua aplicação para que ela se assemelhe o máximo possível ao design sugerido.
 - Faça o deploy e submeta sua implementação no Codante.
 
-
 ## 🎨 Design
 
 🔗[Link do Figma](https://www.figma.com/community/file/1279469125991371134)
@@ -20,3 +19,5 @@ Projeto proposto pela [Codante](https://codante.io/) onde o objetivo era dar a v
 - **HTML**
 - **CSS**
 - **JavaScript Puro**
+
+Avançando um pouco mais os requisitos do projeto, utilizei Scroll Animation com JavaScript puro utilizando IntersectionObserver para melhorar a experiência e interação com o usuário.
